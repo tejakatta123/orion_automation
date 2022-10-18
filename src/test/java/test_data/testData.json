@@ -1,0 +1,15 @@
+[
+	{
+		"EventName": "Auto_1234",
+		"eventType": "Real-time",
+		"descriptionText": "ABCDE12",
+		"checkboxStatus": "yes"
+		
+	},
+	{
+		"EventName": "Auto_tkkk",
+		"eventType": "Standard",
+		"descriptionText": "jklpmop",
+		"checkboxStatus": "no"
+	}
+]

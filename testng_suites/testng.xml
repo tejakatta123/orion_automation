@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Orion Suite">
+
+	<listeners>
+		<listener class-name="TestComponents.ExtentListeners">
+		</listener>
+	</listeners>
+
+
+	<!-- <test thread-count="5" name="AccountTest">
+		<classes>
+			<class name="MainTests.Account_CustomEventTest" />
+		</classes>
+	</test> -->
+
+	<test thread-count="5" name="FolderTests">
+		<classes>
+
+			<class name="MainTests.Folder_Test">
+			<!-- <methods>
+			<include name="folderTestUi"></include>
+			</methods> -->
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
