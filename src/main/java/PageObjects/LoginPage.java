@@ -1,10 +1,16 @@
 package PageObjects;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import AbstractComponents_orion.AbstractComponents;
+import utils_orion.CommonUtils;
 
 public class LoginPage extends AbstractComponents {
 
@@ -16,9 +22,10 @@ public class LoginPage extends AbstractComponents {
 //		this.driver=driver;
 	}
 	
-	public void logintoApplication() {
-
-		driver.get("https://interact5.responsys.net/authentication/login/LoginPage");
+	public void logintoApplication() throws Exception {
+		Properties prop = CommonUtils.loadProperties();
+		String url=prop.getProperty("loginUrl");
+		driver.get(url);
 		driver.findElement(txt_username).sendKeys("admin@qa50");
 		driver.findElement(By.id("txtPassword")).sendKeys("Welcome1234!");
 		driver.findElement(By.xpath("//button[contains(@onclick,'LoginModule')]")).click();

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-18T08:30:50 IST" name="Orion Suite" finished-at="2022-10-18T08:31:38 IST" duration-ms="48665">
+  <suite started-at="2022-10-30T10:35:23 IST" name="Orion Suite" finished-at="2022-10-30T10:36:08 IST" duration-ms="44717">
     <groups>
     </groups>
-    <test started-at="2022-10-18T08:30:50 IST" name="FolderTests" finished-at="2022-10-18T08:31:38 IST" duration-ms="48665">
+    <test started-at="2022-10-30T10:35:23 IST" name="FolderTests" finished-at="2022-10-30T10:36:08 IST" duration-ms="44717">
       <class name="MainTests.Folder_Test">
-        <test-method is-config="true" signature="IntializeBrowser()[pri:0, instance:MainTests.Folder_Test@14028087]" started-at="2022-10-18T08:30:50 IST" name="IntializeBrowser" finished-at="2022-10-18T08:30:54 IST" duration-ms="4519" status="PASS">
+        <test-method is-config="true" signature="IntializeBrowser()[pri:0, instance:MainTests.Folder_Test@14028087]" started-at="2022-10-30T10:35:23 IST" name="IntializeBrowser" finished-at="2022-10-30T10:35:31 IST" duration-ms="7859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IntializeBrowser -->
-        <test-method signature="folderTest()[pri:0, instance:MainTests.Folder_Test@14028087]" started-at="2022-10-18T08:30:54 IST" name="folderTest" finished-at="2022-10-18T08:31:38 IST" duration-ms="44007" status="PASS">
+        <test-method signature="folderTest()[pri:0, instance:MainTests.Folder_Test@14028087]" started-at="2022-10-30T10:35:31 IST" name="folderTest" finished-at="2022-10-30T10:36:07 IST" duration-ms="36667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- folderTest -->
-        <test-method signature="folderTestUi()[pri:0, instance:MainTests.Folder_Test@14028087]" started-at="2022-10-18T08:31:38 IST" name="folderTestUi" finished-at="2022-10-18T08:31:38 IST" duration-ms="106" status="PASS">
+        <test-method signature="folderTestUi()[pri:0, instance:MainTests.Folder_Test@14028087]" started-at="2022-10-30T10:36:07 IST" name="folderTestUi" finished-at="2022-10-30T10:36:08 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- folderTestUi -->

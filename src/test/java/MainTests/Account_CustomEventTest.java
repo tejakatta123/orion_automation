@@ -25,7 +25,7 @@ public class Account_CustomEventTest extends BaseTest {
 
 
 	@Test(dataProvider="getData")
-	public void CustomEventTest(HashMap<String,String> input) throws IOException, InterruptedException {
+	public void CustomEventTest(HashMap<String,String> input) throws Exception {
 		LoginPage login = new LoginPage(driver);
 		login.logintoApplication();
 		

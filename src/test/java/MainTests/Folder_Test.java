@@ -1,5 +1,6 @@
 package MainTests;
 
+import java.io.IOException;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -31,7 +32,7 @@ public class Folder_Test extends BaseTest {
 	//	ExtentReports extent =getExtentReports();
 
 	@Test
-	public void folderTest() {
+	public void folderTest() throws Exception {
 
 		LoginPage login = new LoginPage(driver);
 		login.logintoApplication();

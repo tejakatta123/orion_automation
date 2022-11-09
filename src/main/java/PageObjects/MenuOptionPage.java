@@ -16,7 +16,8 @@ public class MenuOptionPage extends AbstractComponents {
 			.xpath("//span[contains(@id,'hamburgerbutton') and contains(@class,'icon-el-ri-iconbutton-small')]");
 	WebElement folder = driver.findElement(By.xpath("//div[text()='Folders']"));
 	WebElement account= driver.findElement(By.xpath("//div[text()='Account']"));
-
+	WebElement actions= driver.findElement(By.xpath("//li//div[text()='Actions']"));
+	WebElement createCampaignOption= driver.findElement(By.xpath("//li//div[text()='Create Campaign']"));
 	public void clickFolderOption() {
 		WebElement menu=driver.findElement(menuXpath);
 		ElementtoAppear(menu);
@@ -39,5 +40,23 @@ public class MenuOptionPage extends AbstractComponents {
 		account.click();
 
 	}
+	
+	public void ActionsOption()
+	{
+		WebElement menu=driver.findElement(menuXpath);
+		ElementtoAppear(menu);
+		if (folder.isDisplayed()) {
+			actions.click();
+		} else
+
+			driver.findElement(menuXpath).click();
+		actions.click();
+	}
+	
+	public void clickCreatecampaign()
+	{
+		createCampaignOption.click();
+	}
+	
 
 }

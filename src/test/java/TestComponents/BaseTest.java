@@ -34,6 +34,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import Resources.ExtentReportComp;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils_orion.CommonUtils;
+import utils_orion.Constants;
 
 public class BaseTest {
 
@@ -42,12 +44,9 @@ public class BaseTest {
 	public static ExtentTest test;
 
 	@BeforeTest(alwaysRun = true)
-	public WebDriver IntializeBrowser() throws IOException {
+	public WebDriver IntializeBrowser() throws Exception {
 
-		Properties prop = new Properties();
-		FileInputStream file = new FileInputStream(
-				"D:\\WORKSPACE\\orion_automation\\src\\main\\java\\Resources\\GlobalData.properties");
-		prop.load(file);
+		Properties prop = CommonUtils.loadProperties();
 		String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -72,7 +71,7 @@ public class BaseTest {
 	 */
 
 	public String[][] ReadExcelData(String excelSheetName) throws Exception {
-		File src = new File("D:\\WORKSPACE\\orion_automation\\src\\test\\java\\test_data\\test_data.xlsx");
+		File src = new File(Constants.TESTDATA_EXCELFILE);
 		FileInputStream fis = new FileInputStream(src);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sheetName = wb.getSheet(excelSheetName);
